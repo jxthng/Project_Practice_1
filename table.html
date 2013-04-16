@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>DHS</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script language="javascript" src="script.js"></script>
+	</head>
+
+	<body>
+		<form method="POST" action="submitted.html" name="ofrm">
+<table border="0" cellpadding="0" width="550" id="table1">
+		<p>Tell us what you would like:</p>
+		<table border="0" cellpadding="0" width="550" id="table2">
+			<tr>
+			<td width="250" height="31"><b>Item Description</b></td>
+			<td align="center" width="100" height="31"><b>Quantity</b></td>
+			<td align="right" height="31" width="60"><b>Price </b></td>
+			<td align="right" height="31" width="140"><b>Total</b></td>
+			</tr>
+			<tr>
+			<td width="250">A4 Lecture Pad</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyA" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">2.60</td>
+			<td align="right" width="140">
+			<input type="text" name="totalA" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">7-Colour Sticky Note with Pen</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyB" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">4.20</td>
+			<td align="right" width="140">
+			<input type="text" name="totalB" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">A5 Ring Book</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyC" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">4.80</td>
+			<td align="right" width="140">
+			<input type="text" name="totalC" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">A5 Note Book with Zip Bag</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyD" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">4.60</td>
+			<td align="right" width="140">
+			<input type="text" name="totalD" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">2B Pencil</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyE" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">0.90</td>
+			<td align="right" width="140">
+			<input type="text" name="totalE" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">Stainless Steel Tumbler</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyF" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">12.90</td>
+			<td align="right" width="140">
+			<input type="text" name="totalF" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">A4 Clear Holder</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyG" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">4.40</td>
+			<td align="right" width="140">
+			<input type="text" name="totalG" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">A4 Vanguard File</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyH" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">1.00</td>
+			<td align="right" width="140">
+			<input type="text" name="totalH" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">Name Card Holder</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyI" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">10.90</td>
+			<td align="right" width="140">
+			<input type="text" name="totalI" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">Umbrella</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyJ" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">9.00</td>
+			<td align="right" width="140">
+			<input type="text" name="totalJ" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">School Badge (Junior High)</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyK" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">1.30</td>
+			<td align="right" width="140">
+			<input type="text" name="totalK" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">School Badge (Senior High)</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyL" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">1.80</td>
+			<td align="right" width="140">
+			<input type="text" name="totalL" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">Dunman Dolls (Pair)</td>
+			<td align="center" width="100">
+			<input type="text" name="qtyM" size="5" tabindex="5" onchange="calculate()"></td>
+			<td align="right" width="60">45.00</td>
+			<td align="right" width="140">
+			<input type="text" name="totalM" size="12" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">&nbsp;</td>
+			<td align="center" width="100">&nbsp;</td>
+			<td align="right" width="60">&nbsp;</td>
+			<td align="right" width="140">&nbsp;</td>
+			</tr>
+			<tr>
+			<td width="250">
+			<p align="right"><b>TOTAL:</b></td>
+			<td align="center" width="100">&nbsp;</td>
+			<td align="right" width="60">&nbsp;</td>
+			<td align="right" width="140">
+			<input type="text" name="GrandTotal" size="15" tabindex="99" onchange="calculate()"></td>
+			</tr>
+			<tr>
+			<td width="250">&nbsp;</td>
+			<td align="center" width="100">&nbsp;</td>
+			<td align="right" width="60">&nbsp;</td>
+			<td align="right" width="140">&nbsp;</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+<table border="0" cellpadding="0" width="550" id="table3">
+<tr>
+<td width="563">
+<p align="center">
+<input type="submit" value="Submit" name="subButton" tabindex="50">&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="reset" value="Reset" name="resetButton" tabindex="50"></td>
+</tr>
+</table>
+</form>
+</body>
+</h1
